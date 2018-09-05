@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div class="content post h-entry">
+	<h1 class="home-title">{{ page.title }}</h1>
+  <div class="post-date">
+    <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+  </div>
+  <div class="e-content">
+  {{ content }}
+  </div>
+</div>

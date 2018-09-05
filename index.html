@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="content list h-feed">
+{% if site.posts.size == 0 %}
+  <h2>No post found</h2>
+{% else %}
+{% for post in paginator.posts %}
+  <div class="list-item h-entry">
+		<a href="{{ site.baseurl }}{{ post.url }}"><h1 class="home-title">{{ post.title }}</h1></a>
+    <div class="content post e-content">
+      {{ post.content }}
+    </div>
+    <div class="list-post-date">
+      <a href="{{ site.baseurl }}{{ post.url }}" class="u-url"><time class="dt-published" datetime="{{ post.date }}">{{ post.date | date_to_string }}</time></a>
+    </div>
+  </div>
+{% endfor %}
+{% endif %}
+</div>
+
+{% if paginator.previous_page or paginator.next_page %}
+    {% include pagination.html %}
+{% endif %}
+
+<footer class="site-footer">
+	<p class="text">{{ site.description }}</p>
+</footer>

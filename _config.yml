@@ -1,0 +1,52 @@
+# # # # # # # #
+#   K i k o   #
+# # # # # # # #
+
+# - markdown: kramdown
+
+# Sass
+sass:
+  style:            :compressed
+
+# Scopes
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+title: "Ethan Huang"
+tagline: ""
+description: ""
+credits: ""
+baseurl: ""
+url: "https://13h.tw"
+markdown: "kramdown"
+username: "ethanhuang13"
+microblog_user: "ethanhuang13"
+permalink: "/:year/:month/:day/:title.html"
+relative_permalinks: false
+author: "Ethan Huang"
+name: "Ethan Huang"
+gravatar_hash: "61a2325aa2033a3d43c8edfb43718562"
+avatar: "./assets/images/avatar.jpg"
+full_name: "Ethan Huang"
+bio: "I write ccool apps for living."
+twitter_username: "ethanhuang13"
+github_username: "ethanhuang13"
+instagram_username: ""
+paginate: 20
+paginate_path: "/page/:num/"
+timezone: "Taipei"
+site_id: "3744"
+plugins: ["jekyll-paginate"]
+itunes_category: "Society & Culture"
+itunes_subcategory: "Personal Journals"
