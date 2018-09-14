@@ -1,7 +1,0 @@
----
-layout: post
-title: 從 iOS app 一鍵發送文章到 GitHub.io
----
-根據[這篇文章](https://www.ryandaigle.com/a/ipad-pro-publishing-from-ulysses-to-jekyll-with-one-tap/)的方式設定。
-
-主要是透過 iOS 上的 Workflow、WorkingCopy app，以及 GitHub.io 設定好 jekyll。
