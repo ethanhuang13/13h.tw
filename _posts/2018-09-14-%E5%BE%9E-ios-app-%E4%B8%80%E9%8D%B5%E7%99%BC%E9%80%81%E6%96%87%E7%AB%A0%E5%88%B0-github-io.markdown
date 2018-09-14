@@ -1,0 +1,13 @@
+---
+layout: post
+title: "從 iOS app 一鍵發送文章到 GitHub.io"
+date: 2018-09-14
+author: ethanhuang13
+tags:
+  - 
+category: blog
+blog: true
+---
+
+
+主要是透過 iOS 上的 Workflow、WorkingCopy app，以及 GitHub.io 設定好 jekyll。
