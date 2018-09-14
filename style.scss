@@ -338,13 +338,15 @@ tbody tr:nth-child(odd) th {
 
 .post {
   &-title {
+    margin-top: 2rem;
     margin-bottom: .25rem;
   }
   &-date {
-    margin-bottom: 2rem;
+    margin-bottom: .25rem;
     font-size: .75rem;
     text-transform: uppercase;
   }
+  margin-bottom: 2rem;
 }
 
 .list {
@@ -453,6 +455,6 @@ tbody tr:nth-child(odd) th {
 }
 
 .home-title {
-	font-size: 1.2em;
-	margin-bottom: 10px;
+	font-size: 1.3em;
+	margin-bottom: 0.75rem;
 }

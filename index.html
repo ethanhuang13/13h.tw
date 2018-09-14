@@ -7,10 +7,10 @@ layout: default
 {% else %}
 {% for post in paginator.posts %}
   <div class="list-item h-entry">
-		<a href="{{ site.baseurl }}{{ post.url }}"><h1 class="home-title">{{ post.title }}</h1></a>
     <div class="post-date">
-      <time class="dt-published" datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
+      <time class="dt-published" datetime="{{ post.date }}">{{ post.date | date: "%Y/%m/%d" }}</time>
     </div>
+		<a href="{{ site.baseurl }}{{ post.url }}"><h1 class="home-title">{{ post.title }}</h1></a>
     <div class="content post e-content">
       {{ post.content }}
     </div>
