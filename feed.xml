@@ -11,9 +11,7 @@ layout: null
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     {% for post in site.posts limit:50 %}
       <item>
-      	{% if post.microblog == false %}
         <title>{{ post.title | xml_escape }}</title>
-        {% endif %}
         <description>{{ post.content | xml_escape }}</description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
