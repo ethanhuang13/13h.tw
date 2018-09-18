@@ -4,6 +4,14 @@
 
 [See it live](https://kiko.gfjaru.com/)
 
+## Kiko-plus
+
+https://github.com/AWEEKJ/Kiko-plus by. [@AWEEKJ](https://github.com/AWEEKJ)
+
+## To do lists
+
+Next update is new theme based from Kiko.
+
 ## Get Started
 
 1. Fork this repository

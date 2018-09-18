@@ -14,7 +14,7 @@ body {
 }
 
 html {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "SF Pro Text", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
@@ -25,14 +25,14 @@ html {
 }
 
 body {
-  color: #515151;
+  color: #444;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
 
 a {
-  color: #268bd2;
+  color: #0070c9;
   text-decoration: none;
 
   &:hover,
@@ -55,11 +55,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 h4, h5, h6 {
@@ -84,11 +84,19 @@ dd {
 }
 
 ul {
-  list-style: inside circle;
+  list-style-type: none;
   padding-left: 0;
 
   li {
     margin-bottom: .25rem;
+    padding-left: 1em;
+  }
+
+  li:before {
+    content: "–";
+    position: absolute;
+    /*change margin to move dash around*/
+    margin-left: -1em
   }
 
   ul,
@@ -168,7 +176,7 @@ pre {
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: #bf616a;
+  color: #0070c9;
   background-color: #f9f9f9;
   border-radius: 3px;
 }
@@ -231,7 +239,6 @@ pre code {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
   margin: 0 0 1rem;
   border-radius: 5px;
 }
@@ -279,12 +286,13 @@ tbody tr:nth-child(odd) th {
 
       &:hover,
       &:focus {
+        color: #aaa;
         text-decoration: none;
       }
     }
 
     span {
-      color: #ddd;
+      color: #aaa;
     }
 
   }
@@ -318,7 +326,7 @@ tbody tr:nth-child(odd) th {
 
       &:hover,
       &:focus {
-        color: #333;
+        color: #666;
         text-decoration: none;
       }
 
@@ -332,38 +340,38 @@ tbody tr:nth-child(odd) th {
 
 .page {
   &-title {
-    margin-bottom: 2rem;
+    margin-bottom: 0.75rem;
   }
 }
 
 .post {
   &-title {
-    margin-top: 2rem;
-    margin-bottom: .25rem;
+    margin-bottom: 0.75rem;
   }
   &-date {
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
     font-size: .75rem;
     text-transform: uppercase;
   }
-  margin-bottom: 2rem;
 }
 
 .list {
   &-post-title {
-    margin-top: 1rem;
-    margin-bottom: .25rem;
+    margin-bottom: 0.75rem;
 
     a {
       color: #333;
 
       &:hover,
       &:focus {
+        color: #666;
         text-decoration: none;
       }
     }
   }
   &-post-date {
+    margin-top: 2.5em;
+    margin-bottom: 0.25rem;
     font-size: .75rem;
     text-transform: uppercase;
   }
@@ -436,25 +444,3 @@ tbody tr:nth-child(odd) th {
 .highlight .vg { color: #008080 } /* Name.Variable.Global */
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
-
-.site-footer {
-  font-size: 80%;
-  color: darkgray;
-}
-
-.site-footer a {
-  color: black;
-}
-
-#post-nav {
-	padding-top: 25px;
-}
-
-#post-nav .prev {
-	padding-right: 10px;
-}
-
-.home-title {
-	font-size: 1.3em;
-	margin-bottom: 0.75rem;
-}
