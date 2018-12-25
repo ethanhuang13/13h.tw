@@ -2,6 +2,13 @@
 layout: post
 title: iOS 也有深色模式—智慧型反相
 ---
+2018/11/30 更新：
+
+如果要將整個 app 反向的話，不能用 `UIView.appearance().accessibilityIgnoresInvertColors = true` ，否則會遇到[問題](http://www.openradar.me/radar?id=4963036246835200)。官方回說可以在各個 `viewController.view` 做設定。
+
+[![Don't do this in rdar://45663655](/assets/img/2018-10-30-smart-invert-radar-reply.png)](rdar://45663655)
+
+---
 2016 年，Apple 給 tvOS 10 增加了深色主題設定（[`UIUserInterfaceStyle`](https://developer.apple.com/documentation/uikit/uiuserinterfacestyle)*）、2018 年 macOS 在 Mojave 也新增了深色模式，甚至連 Safari/WebKit 都可以告訴網站去支援深色模式（[`prefers-color-scheme`](https://webkit.org/blog/8475/release-notes-for-safari-technology-preview-68/)）。但是 iOS 一直沒有全系統的深色主題或設定。
 
 由於 iOS 的 UI 預設都是白底黑字或亮色系，大部分 app 如果不特別設計深色主題的話也就會是淺色，所以**把螢幕顏色反過來**就是一個建立深色模式的思路💡。
@@ -17,7 +24,7 @@ title: iOS 也有深色模式—智慧型反相
 
 要支援智慧型反相滿簡單的，就是把不要反相的 `UIView` 元件的 [`accessibilityIgnoresInvertColors`](https://developer.apple.com/documentation/uikit/uiview/2865843-accessibilityignoresinvertcolors) 設為 `true` 即可。
 
-如果整個 app 都不要反相，在 `UIApplicationDelegate` 的 `didFinishLaunchingWithOptions` 方法設定 `UIView.appearance().accessibilityIgnoresInvertColors = true` 即可。
+2018/11/30 更新：請不要這麼做🚫 ~~如果整個 app 都不要反相，在 `UIApplicationDelegate` 的 `didFinishLaunchingWithOptions` 方法設定 `UIView.appearance().accessibilityIgnoresInvertColors = true` 即可。~~
 
 ---
 正常的顏色：
