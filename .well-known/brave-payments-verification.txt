@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: 13h.tw
+Token: 6769fe2d5d3ef56158b2e11a7cb14a3461b6a2db09e185555a0ec890936673d0

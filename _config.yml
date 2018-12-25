@@ -40,5 +40,7 @@ defaults:
     values:
       layout:       "post"
 
+include: [".well-known"]
+
 plugins:
   - jekyll-seo-tag
