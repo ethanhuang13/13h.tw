@@ -239,6 +239,7 @@ pre code {
 img {
   display: block;
   max-width: 100%;
+  max-height: 800px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
@@ -347,17 +348,19 @@ tbody tr:nth-child(odd) th {
 
 .post {
   &-title {
+    font-size: 2.5rem;
     margin-bottom: 0.75rem;
   }
   &-date {
     margin-bottom: 0.25rem;
-    font-size: .75rem;
+    font-size: 1rem;
     text-transform: uppercase;
   }
 }
 
 .list {
   &-post-title {
+    font-size: 2.5rem;
     margin-bottom: 0.75rem;
 
     a {
@@ -373,8 +376,11 @@ tbody tr:nth-child(odd) th {
   &-post-date {
     margin-top: 2.5em;
     margin-bottom: 0.25rem;
-    font-size: .75rem;
+    font-size: 1rem;
     text-transform: uppercase;
+  }
+  &-item {
+    margin-bottom: 5rem;
   }
 }
 
