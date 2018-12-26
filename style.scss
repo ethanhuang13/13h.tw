@@ -390,6 +390,11 @@ tbody tr:nth-child(odd) th {
   }
 }
 
+.pagination {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */

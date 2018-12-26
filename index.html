@@ -5,7 +5,7 @@ layout: default
 {% if site.posts.size == 0 %}
   <h2>No post found</h2>
 {% else %}
-{% for post in site.posts %}
+{% for post in paginator.posts %}
   <div class="list-item">
     <div class="list-post-date">
       <time>{{ post.date | date: "%Y/%m/%d" }}</time>
@@ -18,5 +18,31 @@ layout: default
     </div>
   </div>
 {% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      ◀️
+    </a>
+    <span>&nbsp</span>
+  {% else %}
+    <span>&nbsp&nbsp</span>
+  {% endif %}
+
+  <span class="page_number ">
+    {{ paginator.page }} of {{ paginator.total_pages }} Pages
+  </span>
+
+  {% if paginator.next_page %}
+    <span>&nbsp</span>
+    <a href="{{ paginator.next_page_path }}" class="next">
+      ▶️
+    </a>
+  {% else %}
+    <span>&nbsp&nbsp</span>
+  {% endif %}
+</div>
+
 {% endif %}
 </div>

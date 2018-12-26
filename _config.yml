@@ -40,7 +40,10 @@ defaults:
     values:
       layout:       "post"
 
+paginate: 5
+
 include: [".well-known"]
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-paginate
