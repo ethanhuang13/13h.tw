@@ -54,11 +54,11 @@ title: 如何管理 Xcode 版本才不會害到自己跟團隊
 
 下載頁面的首頁是 [https://developer.apple.com/downloads](https://developer.apple.com/downloads)。而列出下載檔的位置是在 [https://developer.apple.com/downloads/more](https://developer.apple.com/downloads/more)。都需要登入開發者帳號。
 
-![](/assets/img/2019-11-01-developer-downloads.png)
+![](/assets/img/2019-11-01-developer-downloads.jpg)
 
 要去按 **More**，是不是藏得有點深...
 
-![](/assets/img/2019-11-01-developer-downloads-more.png)
+![](/assets/img/2019-11-01-developer-downloads-more.jpg)
 
 是說，這邊最早還可以下載到 Xcode 3.2 呢。
 
@@ -86,7 +86,7 @@ xcversion update
 xcversion list
 ```
 
-![](/assets/img/2019-11-01-xcversion-list.png)
+![](/assets/img/2019-11-01-xcversion-list.jpg)
 
 ## Xcode 與 iOS 相容性測試
 
