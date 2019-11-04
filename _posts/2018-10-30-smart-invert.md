@@ -2,6 +2,10 @@
 layout: post
 title: iOS 也有深色模式—智慧型反相
 ---
+2019/01/04 更新：
+
+這篇文章本來是寫在 iOS 12 時代，可以忽略了。現在請愛用 iOS 13 的 Dark Mode。
+
 2018/11/30 更新：
 
 如果要將整個 app 反向的話，不能用 `UIView.appearance().accessibilityIgnoresInvertColors = true` ，否則會遇到[問題](http://www.openradar.me/radar?id=4963036246835200)。官方回說可以在各個 `viewController.view` 做設定。
@@ -29,15 +33,15 @@ title: iOS 也有深色模式—智慧型反相
 ---
 正常的顏色：
 
-![Normal](/assets/img/2018-10-30-cp-normal.png)
+![Normal](/assets/img/2018-10-30-cp-normal.jpg)
 
 智慧型反相的預設結果，效果跟經典反相一樣：
 
-![Enable Smart Invert](/assets/img/2018-10-30-enable-smart-invert.png)
+![Enable Smart Invert](/assets/img/2018-10-30-enable-smart-invert.jpg)
 
 整個 app 的 UIView 都忽略經典反相，看起來大致相同。狀態列的顏色仍然是反過來的：
 
-![Ignore Invert](/assets/img/2018-10-30-ignore-invert.png)
+![Ignore Invert](/assets/img/2018-10-30-ignore-invert.jpg)
 
 如果在意狀態列顏色的話，可以監聽系統通知 [`invertColorsStatusDidChangeNotification`](https://developer.apple.com/documentation/uikit/uiaccessibility/1615196-invertcolorsstatusdidchangenotif)，並用 [`UIAccessibility.isInvertColorsEnabled`](https://developer.apple.com/documentation/uikit/uiaccessibility/1615167-isinvertcolorsenabled) 來判斷使用者是否啟用反相，然後再指定狀態列的 style。這個判斷名稱雖然沒有寫 smart，但是我實測它只會在智慧型反相時回傳 true，在經典反相時則回傳 false。
 
